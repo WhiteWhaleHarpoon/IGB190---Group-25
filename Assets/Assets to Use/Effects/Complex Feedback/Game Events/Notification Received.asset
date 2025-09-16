@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8483287b24a2074fa2a9b3ef3856053, type: 3}
+  m_Name: Notification Received
+  m_EditorClassIdentifier: 
+  feedbackItems:
+  - rid: 4090945655986978820
+  references:
+    version: 2
+    RefIds:
+    - rid: 4090945655986978820
+      type: {class: PlaySound, ns: FastFeedback, asm: Assembly-CSharp}
+      data:
+        isEnabled: 1
+        effectTag: 
+        hasError: 0
+        targetGameObjectSettings: 0
+        targetGameObject: {fileID: 0}
+        targetGameObjectTag: 
+        animationCurveSettings: 0
+        customCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        isExpanded: 1
+        soundToPlay: {fileID: 8300000, guid: 59979b05ac0f0b646bb6abde15e66115, type: 3}
+        volume: 0.102
+        playConditions: 0
+        timesToPlay: 0
+        durationToPlayFor: 0
+        soundSettings: 0
+        soundTarget: {fileID: 0}
+        targetTag: 
+        minPitchChange: 1.1
+        maxPitchChange: 0.9
+        soundTargetSettings: 0
+        soundChoiceSettings: 0
+        randomisedSounds:
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        - {fileID: 0}
+        randomisedSoundCount: 2

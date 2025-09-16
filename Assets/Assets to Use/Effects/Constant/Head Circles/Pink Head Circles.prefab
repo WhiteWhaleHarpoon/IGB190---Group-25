@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &736837277499066792
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -5602418313001908719, guid: ddcd65c83fece0d4e8044b06d79cc1be, type: 3}
+      propertyPath: isTemplate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9100327252474070096, guid: ddcd65c83fece0d4e8044b06d79cc1be, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.7398768
+      objectReference: {fileID: 0}
+    - target: {fileID: 9100327252474070096, guid: ddcd65c83fece0d4e8044b06d79cc1be, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9100327252474070096, guid: ddcd65c83fece0d4e8044b06d79cc1be, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.9529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 9100327253661085905, guid: ddcd65c83fece0d4e8044b06d79cc1be, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9100327253661085905, guid: ddcd65c83fece0d4e8044b06d79cc1be, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9100327253661085905, guid: ddcd65c83fece0d4e8044b06d79cc1be, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9100327253661085905, guid: ddcd65c83fece0d4e8044b06d79cc1be, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9100327253661085905, guid: ddcd65c83fece0d4e8044b06d79cc1be, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9100327253661085905, guid: ddcd65c83fece0d4e8044b06d79cc1be, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9100327253661085905, guid: ddcd65c83fece0d4e8044b06d79cc1be, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9100327253661085905, guid: ddcd65c83fece0d4e8044b06d79cc1be, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9100327253661085905, guid: ddcd65c83fece0d4e8044b06d79cc1be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9100327253661085905, guid: ddcd65c83fece0d4e8044b06d79cc1be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9100327253661085905, guid: ddcd65c83fece0d4e8044b06d79cc1be, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9100327253661085906, guid: ddcd65c83fece0d4e8044b06d79cc1be, type: 3}
+      propertyPath: m_Name
+      value: Pink Head Circles
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ddcd65c83fece0d4e8044b06d79cc1be, type: 3}

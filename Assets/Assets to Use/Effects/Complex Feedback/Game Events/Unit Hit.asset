@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8483287b24a2074fa2a9b3ef3856053, type: 3}
+  m_Name: Unit Hit
+  m_EditorClassIdentifier: 
+  feedbackItems:
+  - rid: 248813149619749217
+  - rid: 248813149619749218
+  - rid: 6728881780876902428
+  references:
+    version: 2
+    RefIds:
+    - rid: 248813149619749217
+      type: {class: SetAnimatorTrigger, ns: FastFeedback, asm: Assembly-CSharp}
+      data:
+        isEnabled: 1
+        effectTag: 
+        hasError: 0
+        targetGameObjectSettings: 0
+        targetGameObject: {fileID: 0}
+        targetGameObjectTag: 
+        animationCurveSettings: 0
+        customCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        isExpanded: 1
+        trigger: Hit
+    - rid: 248813149619749218
+      type: {class: FlashColor, ns: FastFeedback, asm: Assembly-CSharp}
+      data:
+        isEnabled: 1
+        effectTag: 
+        hasError: 0
+        targetGameObjectSettings: 0
+        targetGameObject: {fileID: 0}
+        targetGameObjectTag: 
+        animationCurveSettings: 0
+        customCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        isExpanded: 1
+        flashColor: {r: 1, g: 1, b: 1, a: 1}
+        flashTime: 0.1
+        flashUsingEmission: 0
+        flashDuration: 0
+        effectDuration: 0.1
+        numberOfFlashes: 1
+    - rid: 6728881780876902428
+      type: {class: CreateGameObject, ns: FastFeedback, asm: Assembly-CSharp}
+      data:
+        isEnabled: 1
+        effectTag: 
+        hasError: 0
+        targetGameObjectSettings: 0
+        targetGameObject: {fileID: 0}
+        targetGameObjectTag: 
+        animationCurveSettings: 0
+        customCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        isExpanded: 1
+        objectToSpawn: {fileID: 6785760098195727640, guid: 540dfcad903d30c40914f63280b599d9, type: 3}
+        positionMode: 0
+        targetPosition: {x: 0, y: 0, z: 0}
+        targetPositionObject: {fileID: 0}
+        rotationMode: 1
+        targetEulerRotation: {x: 0, y: 0, z: 0}
+        targetRotationObject: {fileID: 0}
+        refreshExisting: 0
+        destroyAfterEnabled: 1
+        destroyAfter: 1
+        offset: {x: 0, y: 1, z: 0}
+        scaleModifier: 1

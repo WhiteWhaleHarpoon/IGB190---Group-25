@@ -1,0 +1,102 @@
+fileFormatVersion: 2
+guid: 2b7c30edb821e174eb41ae189cd2cfd0
+labels:
+- Dungeon
+- Environment
+- Floortiles
+- Modula
+- Tileset
+timeCreated: 1434071685
+licenseType: Store
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Camera
+    100002: D:\Documents\projects\#Modular\Objects\stairs_2m.lwo_(3)
+    100004: D:\Documents\projects\#Modular\Objects\stairs_2m.lwo_(5)
+    100006: D:\Documents\projects\#Modular\Objects\stairs_2m.lwo_(6)
+    100008: Light
+    100010: //RootNode
+    100012: stairs_2m_(1)
+    100014: D:\Documents\projects\#Modular\Objects\stairs_2m.lwo_(2)
+    100016: D:\Documents\projects\#Modular\Objects\stairs_2m.lwo_(4)
+    100018: stairs_2m
+    400000: Camera
+    400002: D:\Documents\projects\#Modular\Objects\stairs_2m.lwo_(3)
+    400004: D:\Documents\projects\#Modular\Objects\stairs_2m.lwo_(5)
+    400006: D:\Documents\projects\#Modular\Objects\stairs_2m.lwo_(6)
+    400008: Light
+    400010: //RootNode
+    400012: stairs_2m_(1)
+    400014: D:\Documents\projects\#Modular\Objects\stairs_2m.lwo_(2)
+    400016: D:\Documents\projects\#Modular\Objects\stairs_2m.lwo_(4)
+    400018: stairs_2m
+    2300000: stairs_2m_(1)
+    2300002: stairs_2m
+    3300000: stairs_2m_(1)
+    3300002: stairs_2m
+    4300000: stairs_2m_(1)
+    4300002: stairs_2m
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: dungeon starter pack
+  assetBundleVariant: 

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8483287b24a2074fa2a9b3ef3856053, type: 3}
+  m_Name: Player Death
+  m_EditorClassIdentifier: 
+  feedbackItems:
+  - rid: 4090945631701434368
+  references:
+    version: 2
+    RefIds:
+    - rid: 4090945631701434368
+      type: {class: ApplyCameraShader, ns: FastFeedback, asm: Assembly-CSharp}
+      data:
+        isEnabled: 1
+        effectTag: 
+        hasError: 0
+        targetGameObjectSettings: 0
+        targetGameObject: {fileID: 0}
+        targetGameObjectTag: 
+        animationCurveSettings: 0
+        customCurve:
+          serializedVersion: 2
+          m_Curve: []
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        isExpanded: 1
+        cameraShaderSettings: 3
+        cameraSettings: 0
+        customCamera: {fileID: 0}
+        cameraTag: 
+        customCameraShader: {fileID: 4800000, guid: 9ce2a7d79d2342a48a829b4dc81ea995, type: 3}
+        customCameraMaterial: {fileID: 2100000, guid: 8706b7fc81e7224478c641d44653c0eb, type: 2}
+        effectStrength: 1
+        durationSettings: 0
+        durationTime: 1
+        priority: 5
