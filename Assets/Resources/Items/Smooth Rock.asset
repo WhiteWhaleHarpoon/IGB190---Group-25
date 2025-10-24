@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: 'W.D.G (Worn Down Grip) '
+  m_Name: Smooth Rock
   m_EditorClassIdentifier: 
-  itemName: 'W.D.G (Worn Down Grip) '
+  itemName: Smooth Rock
   itemDescription: 
   itemTag: 
   itemFlavourText: 
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: dec0e5c63c493a445bae12790f311f74, type: 3}
-  itemType: 5
-  itemRarity: 2
+  itemIcon: {fileID: 21300000, guid: 87a6ace052badc94890297eb1f920c27, type: 3}
+  itemType: 4
+  itemRarity: 0
   itemCost: 0
   randomStatCount: 0
   guaranteedStats: []
@@ -31,17 +31,17 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 111357168
+      scriptUID: 947015044
       hasWait: 0
       eventNodes:
-      - rid: 4251662474433003605
+      - rid: 4251662474433003693
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 1392416101
+      scriptUID: 1857334212
       hasWait: 0
       eventNodes:
-      - rid: 4251662474433003606
+      - rid: 4251662474433003694
       conditionNodes: []
       actionNodes: []
   references:
@@ -49,7 +49,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4251662474433003605
+    - rid: 4251662474433003693
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -70,7 +70,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4251662474433003606
+    - rid: 4251662474433003694
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

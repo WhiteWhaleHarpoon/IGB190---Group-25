@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: H.P.O (High Precision Optic)
+  m_Name: Simple Sight System
   m_EditorClassIdentifier: 
-  itemName: H.P.O (High Precision Optic)
+  itemName: Simple Sight System
   itemDescription: 
   itemTag: 
   itemFlavourText: 
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: dec0e5c63c493a445bae12790f311f74, type: 3}
+  itemIcon: {fileID: 21300000, guid: 39f7a15c239ed304bb4cbc5a51763d50, type: 3}
   itemType: 3
-  itemRarity: 3
+  itemRarity: 2
   itemCost: 0
   randomStatCount: 0
   guaranteedStats: []
@@ -31,17 +31,17 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 625316378
+      scriptUID: 1096417954
       hasWait: 0
       eventNodes:
-      - rid: 4251662474433003621
+      - rid: 4251662474433003601
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 167279384
+      scriptUID: 659450105
       hasWait: 0
       eventNodes:
-      - rid: 4251662474433003622
+      - rid: 4251662474433003602
       conditionNodes: []
       actionNodes: []
   references:
@@ -49,7 +49,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4251662474433003621
+    - rid: 4251662474433003601
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -70,7 +70,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4251662474433003622
+    - rid: 4251662474433003602
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

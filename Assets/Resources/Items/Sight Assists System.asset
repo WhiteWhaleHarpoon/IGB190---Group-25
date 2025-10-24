@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: S.S.S (Simple Sight System)
+  m_Name: Sight Assists System
   m_EditorClassIdentifier: 
-  itemName: S.S.S (Simple Sight System)
+  itemName: Sight Assists System
   itemDescription: 
   itemTag: 
   itemFlavourText: 
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 39f7a15c239ed304bb4cbc5a51763d50, type: 3}
-  itemType: 3
+  itemIcon: {fileID: 21300000, guid: dec0e5c63c493a445bae12790f311f74, type: 3}
+  itemType: 0
   itemRarity: 2
   itemCost: 0
   randomStatCount: 0
@@ -31,17 +31,17 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 1096417954
+      scriptUID: 1336774654
       hasWait: 0
       eventNodes:
-      - rid: 4251662474433003601
+      - rid: 4251662474433003673
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 659450105
+      scriptUID: 975182450
       hasWait: 0
       eventNodes:
-      - rid: 4251662474433003602
+      - rid: 4251662474433003674
       conditionNodes: []
       actionNodes: []
   references:
@@ -49,7 +49,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4251662474433003601
+    - rid: 4251662474433003673
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -70,7 +70,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4251662474433003602
+    - rid: 4251662474433003674
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
