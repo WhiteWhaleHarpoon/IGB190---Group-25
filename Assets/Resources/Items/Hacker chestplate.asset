@@ -10,64 +10,68 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Scavanged Dot Sight
+  m_Name: Hacker chestplate
   m_EditorClassIdentifier: 
-  itemName: Scavanged Dot Sight
+  itemName: Hacker chestplate
   itemDescription: 
   itemTag: 
   itemFlavourText: 
-  classRequirement: Sharpshot
-  itemIcon: {fileID: 21300000, guid: 39f7a15c239ed304bb4cbc5a51763d50, type: 3}
-  itemType: 3
-  itemRarity: 1
+  classRequirement: hacker
+  itemIcon: {fileID: 21300000, guid: 5ee626c5c13289943ba7685e2a78f431, type: 3}
+  itemType: 1
+  itemRarity: 3
   itemCost: 0
-  randomStatCount: 1
+  randomStatCount: 3
   guaranteedStats:
-  - stat: 0
-    minimum: 0.12
-    maximum: 0.18
+  - stat: 1
+    minimum: 31
+    maximum: 35
+    isPercent: 0
+  - stat: 1
+    minimum: 0.21
+    maximum: 0.25
     isPercent: 1
   randomisableStats:
   - stat: 0
-    minimum: 8
-    maximum: 10
-    isPercent: 0
-  - stat: 3
-    minimum: 0.03
-    maximum: 0.05
-    isPercent: 1
-  - stat: 5
-    minimum: 0.03
-    maximum: 0.05
-    isPercent: 1
-  - stat: 7
-    minimum: 0.03
-    maximum: 0.05
-    isPercent: 1
-  - stat: 8
-    minimum: 0.03
-    maximum: 0.05
-    isPercent: 1
-  - stat: 10
-    minimum: 0.03
-    maximum: 0.05
-    isPercent: 0
-  - stat: 11
-    minimum: 0.03
-    maximum: 0.05
+    minimum: 16
+    maximum: 31
     isPercent: 0
   - stat: 1
-    minimum: 8
-    maximum: 10
+    minimum: 16
+    maximum: 31
     isPercent: 0
   - stat: 4
-    minimum: 8
-    maximum: 10
+    minimum: 16
+    maximum: 31
     isPercent: 0
   - stat: 5
-    minimum: 8
-    maximum: 10
+    minimum: 16
+    maximum: 31
     isPercent: 0
+  - stat: 9
+    minimum: 0.13
+    maximum: 0.17
+    isPercent: 1
+  - stat: 7
+    minimum: 0.13
+    maximum: 0.17
+    isPercent: 1
+  - stat: 6
+    minimum: 0.13
+    maximum: 0.17
+    isPercent: 1
+  - stat: 5
+    minimum: 0.13
+    maximum: 0.17
+    isPercent: 1
+  - stat: 8
+    minimum: 0.13
+    maximum: 0.17
+    isPercent: 1
+  - stat: 0
+    minimum: 0.13
+    maximum: 0.17
+    isPercent: 1
   minimumDropLevel: 0
   canPurchaseInShop: 1
   canDropOffMonster: 1
@@ -75,17 +79,17 @@ MonoBehaviour:
   engine:
     scripts:
     - scriptName: Item Equipped
-      scriptUID: 1354173925
+      scriptUID: 1553913480
       hasWait: 0
       eventNodes:
-      - rid: 4251662474433003645
+      - rid: 2412806247169654784
       conditionNodes: []
       actionNodes: []
     - scriptName: Item Unequipped
-      scriptUID: 333479214
+      scriptUID: 1518289811
       hasWait: 0
       eventNodes:
-      - rid: 4251662474433003646
+      - rid: 2412806247169654785
       conditionNodes: []
       actionNodes: []
   references:
@@ -93,7 +97,7 @@ MonoBehaviour:
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 4251662474433003645
+    - rid: 2412806247169654784
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -114,7 +118,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
-    - rid: 4251662474433003646
+    - rid: 2412806247169654785
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

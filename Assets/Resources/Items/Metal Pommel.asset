@@ -10,20 +10,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1cdd5fc33fd8b841b7c7cd7dff9b881, type: 3}
-  m_Name: Metal Pomel
+  m_Name: Metal Pommel
   m_EditorClassIdentifier: 
-  itemName: Metal Pomel
+  itemName: Metal Pommel
   itemDescription: 
   itemTag: 
   itemFlavourText: 
-  classRequirement: 
-  itemIcon: {fileID: 21300000, guid: 87a6ace052badc94890297eb1f920c27, type: 3}
+  classRequirement: cap
+  itemIcon: {fileID: 21300000, guid: dec0e5c63c493a445bae12790f311f74, type: 3}
   itemType: 4
   itemRarity: 2
   itemCost: 0
-  randomStatCount: 0
-  guaranteedStats: []
-  randomisableStats: []
+  randomStatCount: 2
+  guaranteedStats:
+  - stat: 3
+    minimum: 0.23
+    maximum: 0.25
+    isPercent: 1
+  randomisableStats:
+  - stat: 0
+    minimum: 13
+    maximum: 17
+    isPercent: 0
+  - stat: 1
+    minimum: 13
+    maximum: 17
+    isPercent: 0
+  - stat: 4
+    minimum: 13
+    maximum: 17
+    isPercent: 0
+  - stat: 5
+    minimum: 13
+    maximum: 17
+    isPercent: 0
+  - stat: 10
+    minimum: 0.07
+    maximum: 0.11
+    isPercent: 0
   minimumDropLevel: 0
   canPurchaseInShop: 1
   canDropOffMonster: 1

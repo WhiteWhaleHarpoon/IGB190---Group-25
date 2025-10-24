@@ -22,7 +22,11 @@ MonoBehaviour:
   itemRarity: 0
   itemCost: 0
   randomStatCount: 0
-  guaranteedStats: []
+  guaranteedStats:
+  - stat: 1
+    minimum: 35
+    maximum: 45
+    isPercent: 0
   randomisableStats: []
   minimumDropLevel: 0
   canPurchaseInShop: 1

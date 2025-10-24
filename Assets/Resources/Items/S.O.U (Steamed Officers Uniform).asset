@@ -16,14 +16,58 @@ MonoBehaviour:
   itemDescription: 
   itemTag: 
   itemFlavourText: 
-  classRequirement: 
+  classRequirement: cap
   itemIcon: {fileID: 21300000, guid: 5ee626c5c13289943ba7685e2a78f431, type: 3}
   itemType: 1
   itemRarity: 2
   itemCost: 0
-  randomStatCount: 0
-  guaranteedStats: []
-  randomisableStats: []
+  randomStatCount: 2
+  guaranteedStats:
+  - stat: 1
+    minimum: 25
+    maximum: 35
+    isPercent: 0
+  - stat: 1
+    minimum: 0.15
+    maximum: 0.21
+    isPercent: 1
+  randomisableStats:
+  - stat: 0
+    minimum: 21
+    maximum: 21
+    isPercent: 0
+  - stat: 1
+    minimum: 21
+    maximum: 21
+    isPercent: 0
+  - stat: 4
+    minimum: 21
+    maximum: 21
+    isPercent: 0
+  - stat: 5
+    minimum: 21
+    maximum: 21
+    isPercent: 0
+  - stat: 0
+    minimum: 0.12
+    maximum: 0.14
+    isPercent: 1
+  - stat: 1
+    minimum: 0.12
+    maximum: 0.14
+    isPercent: 1
+  - stat: 10
+    minimum: 0.12
+    maximum: 0.14
+    isPercent: 0
+  - stat: 3
+    minimum: 0.12
+    maximum: 0.14
+    isPercent: 1
+  - stat: 11
+    minimum: 0.21
+    maximum: 0.24
+    isPercent: 0
   minimumDropLevel: 0
   canPurchaseInShop: 1
   canDropOffMonster: 1

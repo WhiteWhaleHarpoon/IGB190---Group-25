@@ -21,9 +21,73 @@ MonoBehaviour:
   itemType: 1
   itemRarity: 1
   itemCost: 0
-  randomStatCount: 0
-  guaranteedStats: []
-  randomisableStats: []
+  randomStatCount: 2
+  guaranteedStats:
+  - stat: 1
+    minimum: 35
+    maximum: 45
+    isPercent: 0
+  randomisableStats:
+  - stat: 0
+    minimum: 15
+    maximum: 15
+    isPercent: 0
+  - stat: 0
+    minimum: 0.09
+    maximum: 0.09
+    isPercent: 1
+  - stat: 1
+    minimum: 15
+    maximum: 15
+    isPercent: 0
+  - stat: 1
+    minimum: 0.09
+    maximum: 0.09
+    isPercent: 1
+  - stat: 3
+    minimum: 0.09
+    maximum: 0.09
+    isPercent: 1
+  - stat: 4
+    minimum: 15
+    maximum: 15
+    isPercent: 0
+  - stat: 4
+    minimum: 0.09
+    maximum: 0.09
+    isPercent: 1
+  - stat: 5
+    minimum: 15
+    maximum: 15
+    isPercent: 0
+  - stat: 5
+    minimum: 0.09
+    maximum: 0.09
+    isPercent: 1
+  - stat: 6
+    minimum: 0.09
+    maximum: 0.09
+    isPercent: 1
+  - stat: 7
+    minimum: 0.09
+    maximum: 0.09
+    isPercent: 1
+  - stat: 8
+    minimum: 0.09
+    maximum: 0.09
+    isPercent: 1
+  - stat: 9
+    minimum: 0.09
+    maximum: 0.09
+    isPercent: 1
+  - stat: 10
+    minimum: 0.09
+    maximum: 0.09
+    isPercent: 0
+  - stat: 11
+    minimum: 0.18
+    maximum: 0.18
+    isPercent: 0
   minimumDropLevel: 0
   canPurchaseInShop: 1
   canDropOffMonster: 1
