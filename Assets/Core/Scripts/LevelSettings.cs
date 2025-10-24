@@ -5,14 +5,20 @@ using UnityEngine;
 public class LevelSettings
 {
     public bool preventLootDrops = false;
-    public bool preventCommonItemDrops = false;
-    public bool preventRareItemDrops = false;
-    public bool preventLegendaryItemDrops = false;
+    public bool preventscrapItemDrops = false;
+    public bool preventImportGoodsItemDrops = false;
+    public bool preventFineTunedItemDrops = false;
+    public bool preventMilitaryGradeItemDrops = false;
+    public bool preventUniqueItemDrops = false;
+    public bool preventMemorabiliaItemDrops = false;
 
     public float playerLootDropModifier = 1.0f;
-    public float playerCommonItemDropModifier = 1.0f;
-    public float playerRareItemDropModifier = 1.0f;
-    public float playerLegendaryItemDropModifier = 1.0f;
+    public float playerscrapItemDropModifier = 1.0f;
+    public float playerImportGoodsItemDropModifier = 1.0f;
+    public float playerFineTunedItemDropModifier = 1.0f;
+    public float playerMilitaryGradeItemDropModifier = 1.0f;
+    public float playerUniqueItemDropModifier = 1.0f;
+    public float playerMemorabiliaItemDropModifier = 1.0f;
     public float playerExperienceModifier = 1.0f;
     public float playerItemDropRateModifier = 1.0f;
     public float monsterDamageModifier = 1.0f;

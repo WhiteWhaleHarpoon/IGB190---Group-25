@@ -163,9 +163,12 @@ public class GameManager : MonoBehaviour
         public float baseGoldDropAmountMinimum = 10;
         public float baseGoldDropAmountMaximum = 20;
         [Range(0.0f, 1.0f)] public float goldDropChance = 0.4f;
-        [Range(0.0f, 1.0f)] public float unempoweredMonsterCommonDropChance = 0.02f;
-        [Range(0.0f, 1.0f)] public float unempoweredMonsterRareDropChance = 0.005f;
-        [Range(0.0f, 1.0f)] public float unempoweredMonsterLegendaryDropChance = 0;
+        [Range(0.0f, 1.0f)] public float unempoweredMonsterscrapDropChance = 0.15f;
+        [Range(0.0f, 1.0f)] public float unempoweredMonsterImportGoodsDropChance = 0.01f;
+        [Range(0.0f, 1.0f)] public float unempoweredMonsterFineTunedDropChance = 0.005f;
+        [Range(0.0f, 1.0f)] public float unempoweredMonsterMilitaryGradeDropChance = 0;
+        [Range(0.0f, 1.0f)] public float unempoweredMonsterUniqueDropChance = 0;
+        [Range(0.0f, 1.0f)] public float unempoweredMonsterMemorabiliaDropChance = 0;
     }
 
     [SerializeField] private EmpoweredMonsterValues _empoweredMonsterValues;
@@ -177,9 +180,12 @@ public class GameManager : MonoBehaviour
         public float empoweredMonsterAttackSpeedModifier = 1.5f;
         public float empoweredMonsterXPModifier = 5.0f;
         public float empoweredMonsterGoldModifier = 3.0f;
-        [Range(0.0f, 1.0f)] public float empoweredMonsterCommonDropChance = 1f;
-        [Range(0.0f, 1.0f)] public float empoweredMonsterRareDropChance = 0.2f;
-        [Range(0.0f, 1.0f)] public float empoweredMonsterLegendaryDropChance = 0;
+        [Range(0.0f, 1.0f)] public float empoweredMonsterscrapDropChance = 1f;
+        [Range(0.0f, 1.0f)] public float empoweredMonsterImportGoodsDropChance = 0.2f;
+        [Range(0.0f, 1.0f)] public float empoweredMonsterFineTunedDropChance = 0;
+        [Range(0.0f, 1.0f)] public float empoweredMonsterMilitaryGradeDropChance = 0;
+        [Range(0.0f, 1.0f)] public float empoweredMonsterUniqueDropChance = 0;
+        [Range(0.0f, 1.0f)] public float empoweredMonsterMemorabiliaDropChance = 0;
     }
 
     [SerializeField] private PlayerExperienceValues _playerExperienceValues;

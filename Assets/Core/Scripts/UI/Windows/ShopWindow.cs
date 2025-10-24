@@ -46,7 +46,7 @@ public class ShopWindow : UIWindow
     /// </summary>
     private void OnEnable()
     {
-        ApplyMarketplaceFilter(Item.ItemType.Weapon);
+        ApplyMarketplaceFilter(Item.ItemType.Trinket);
     }
 
     /// <summary>

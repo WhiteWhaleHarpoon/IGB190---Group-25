@@ -35,11 +35,11 @@ public class Player : Unit
 
     //  Constants related to the player.
     public const int MAX_INVENTORY_SIZE = 28;
-    private const int WEAPON = 0;
-    private const int AMULET = 1;
-    private const int ARMOR = 2;
-    private const int BOOTS = 3;
-    private const int RING1 = 4;
+    private const int Trinket = 0;
+    private const int ChestPlate = 1;
+    private const int WeaponPiece1 = 2;
+    private const int WeaponPiece2 = 3;
+    private const int Helmet = 4;
     private const int RING2 = 5;
     private const int LEFT = 0;
     private const int RIGHT = 1;
@@ -140,34 +140,34 @@ public class Player : Unit
         //    return;
 
         // Auto-equip items if the player is not wearing an item in that slot.
-        if (item.itemType == Item.ItemType.Weapon && equipment.IsEmpty(WEAPON)) {
+        if (item.itemType == Item.ItemType.Trinket && equipment.IsEmpty(Trinket)) {
             inventory.RemoveItem(item);
-            equipment.AddItemAtID(item, WEAPON);
+            equipment.AddItemAtID(item, Trinket);
         }
-        else if (item.itemType == Item.ItemType.Amulet && equipment.IsEmpty(AMULET))
+        else if (item.itemType == Item.ItemType.ChestPlate && equipment.IsEmpty(ChestPlate))
         {
             inventory.RemoveItem(item);
-            equipment.AddItemAtID(item, AMULET);
+            equipment.AddItemAtID(item, ChestPlate);
         }
-        else if (item.itemType == Item.ItemType.Armor && equipment.IsEmpty(ARMOR))
+        else if (item.itemType == Item.ItemType.WeaponPiece1 && equipment.IsEmpty(WeaponPiece1))
         {
             inventory.RemoveItem(item);
-            equipment.AddItemAtID(item, ARMOR);
+            equipment.AddItemAtID(item, WeaponPiece1);
         }
-        else if (item.itemType == Item.ItemType.Boots && equipment.IsEmpty(BOOTS))
+        else if (item.itemType == Item.ItemType.WeaponPiece2 && equipment.IsEmpty(WeaponPiece2))
         {
             inventory.RemoveItem(item);
-            equipment.AddItemAtID(item, BOOTS);
+            equipment.AddItemAtID(item, WeaponPiece2);
         }
-        else if (item.itemType == Item.ItemType.Ring && equipment.IsEmpty(RING1))
+        else if (item.itemType == Item.ItemType.Helmet && equipment.IsEmpty(Helmet))
         {
             inventory.RemoveItem(item);
-            equipment.AddItemAtID(item, RING1);
+            equipment.AddItemAtID(item, Helmet);
         }
-        else if (item.itemType == Item.ItemType.Ring && equipment.IsEmpty(RING2))
+        else if (item.itemType == Item.ItemType.Ring && equipment.IsEmpty(WeaponPiece3))
         {
             inventory.RemoveItem(item);
-            equipment.AddItemAtID(item, RING2);
+            equipment.AddItemAtID(item, WeaponPiece3);
         }
         */
     }

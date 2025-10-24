@@ -55,9 +55,12 @@ public class Item : ScriptableObject, IVisualCodeHandler
     /// </summary>
     public enum ItemRarity
     {
-        Common,
-        Rare,
-        Legendary
+        Scrap,
+        ImportGoods,
+        FineTuned,
+        MilitaryGrade,
+        Unique,
+        Memorabilia
     }
 
     /// <summary>
@@ -65,12 +68,12 @@ public class Item : ScriptableObject, IVisualCodeHandler
     /// </summary>
     public enum ItemType
     {
-        Ring,
-        Amulet,
-        Weapon,
-        Armor,
-        Boots,
-        Other
+        Helmet,
+        ChestPlate,
+        Trinket,
+        WeaponPiece1,
+        WeaponPiece2,
+        WeaponPiece3
     }
 
     /// <summary>
@@ -291,15 +294,21 @@ public class Item : ScriptableObject, IVisualCodeHandler
     /// <summary>
     /// Rolls for a potential item drop based on the given chances for each rarity.
     /// </summary>
-    public static Item RollForItemDrop(float commonChance = 0.03f, float rareChance = 0.01f, float legendaryChance = 0.005f)
+    public static Item RollForItemDrop(float ScrapChance = 0.03f, float ImportGoodsChance = 0.01f, float FineTunedChance = 0.005f, float MilitaryGradeChance = 0.005f, float UniqueChance = 0.005f, float MemorabiliaChance = 0.005f)
     {
         GenerateLootTable();
-        if (Random.value <= legendaryChance)
-            return GetRandomItemOfRarity(ItemRarity.Legendary);
-        if (Random.value <= rareChance)
-            return GetRandomItemOfRarity(ItemRarity.Rare);
-        if (Random.value <= commonChance)
-            return GetRandomItemOfRarity(ItemRarity.Common);
+        if (Random.value <= MemorabiliaChance)
+            return GetRandomItemOfRarity(ItemRarity.Memorabilia);
+        if (Random.value <= UniqueChance)
+            return GetRandomItemOfRarity(ItemRarity.Unique);
+        if (Random.value <= MilitaryGradeChance)
+            return GetRandomItemOfRarity(ItemRarity.MilitaryGrade);
+        if (Random.value <= FineTunedChance)
+            return GetRandomItemOfRarity(ItemRarity.FineTuned);
+        if (Random.value <= ImportGoodsChance)
+            return GetRandomItemOfRarity(ItemRarity.ImportGoods);
+        if (Random.value <= ScrapChance)
+            return GetRandomItemOfRarity(ItemRarity.Scrap);
         return null;
     }
     
@@ -310,9 +319,12 @@ public class Item : ScriptableObject, IVisualCodeHandler
     {
         return rarity switch
         {
-            ItemRarity.Common => new Color(0.12f, 1.0f, 0.0f),
-            ItemRarity.Rare => Color.yellow,
-            ItemRarity.Legendary => new Color(1.0f, 0.5f, 0.0f),
+            ItemRarity.Scrap => new Color(0.5f, 0.5f, 0.5f), //grey
+            ItemRarity.ImportGoods => new Color(0.0f, 1.0f, 0.0f), //green
+            ItemRarity.FineTuned => new Color(0.0f, 1.0f, 1.0f), //cyan
+            ItemRarity.MilitaryGrade => new Color(0.62f, 0.0f, 1.0f), //purple
+            ItemRarity.Unique => new Color(1.0f, 0.0f, 1.0f), //pink
+            ItemRarity.Memorabilia => new Color(0.86f, 0.08f, 0.24f), //crimson
             _ => Color.grey,
         };
     }

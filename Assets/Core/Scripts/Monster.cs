@@ -268,17 +268,29 @@ public class Monster : Unit
     /// </summary>
     private void HandleEmpoweredDrops(float random)
     {
-        if (random < GameManager.empoweredMonsterValues.empoweredMonsterLegendaryDropChance)
+        if (random < GameManager.empoweredMonsterValues.empoweredMonsterFineTunedDropChance)
         {
-            ItemPickup.Spawn(transform.position, Item.ItemRarity.Legendary);
+            ItemPickup.Spawn(transform.position, Item.ItemRarity.FineTuned);
         }
-        else if (random < GameManager.empoweredMonsterValues.empoweredMonsterRareDropChance)
+        else if (random < GameManager.empoweredMonsterValues.empoweredMonsterImportGoodsDropChance)
         {
-            ItemPickup.Spawn(transform.position, Item.ItemRarity.Rare);
+            ItemPickup.Spawn(transform.position, Item.ItemRarity.ImportGoods);
         }
-        else if (random < GameManager.empoweredMonsterValues.empoweredMonsterCommonDropChance)
+        else if (random < GameManager.empoweredMonsterValues.empoweredMonsterscrapDropChance)
         {
-            ItemPickup.Spawn(transform.position, Item.ItemRarity.Common);
+            ItemPickup.Spawn(transform.position, Item.ItemRarity.Scrap);
+        }
+        else if (random < GameManager.empoweredMonsterValues.empoweredMonsterMilitaryGradeDropChance)
+        {
+            ItemPickup.Spawn(transform.position, Item.ItemRarity.MilitaryGrade);
+        }
+        else if (random < GameManager.empoweredMonsterValues.empoweredMonsterUniqueDropChance)
+        {
+            ItemPickup.Spawn(transform.position, Item.ItemRarity.Unique);
+        }
+        else if (random < GameManager.empoweredMonsterValues.empoweredMonsterMemorabiliaDropChance)
+        {
+            ItemPickup.Spawn(transform.position, Item.ItemRarity.Memorabilia);
         }
 
         HealthPickup.Spawn(transform.position);
@@ -289,18 +301,31 @@ public class Monster : Unit
     /// </summary>
     private void HandleUnempoweredDrops(float random)
     {
-        if (random < GameManager.monsterValues.unempoweredMonsterLegendaryDropChance)
+        if (random < GameManager.monsterValues.unempoweredMonsterFineTunedDropChance)
         {
-            ItemPickup.Spawn(transform.position, Item.ItemRarity.Legendary);
+            ItemPickup.Spawn(transform.position, Item.ItemRarity.FineTuned);
         }
-        else if (random < GameManager.monsterValues.unempoweredMonsterRareDropChance)
+        else if (random < GameManager.monsterValues.unempoweredMonsterImportGoodsDropChance)
         {
-            ItemPickup.Spawn(transform.position, Item.ItemRarity.Rare);
+            ItemPickup.Spawn(transform.position, Item.ItemRarity.ImportGoods);
         }
-        else if (random < GameManager.monsterValues.unempoweredMonsterCommonDropChance)
+        else if (random < GameManager.monsterValues.unempoweredMonsterscrapDropChance)
         {
-            ItemPickup.Spawn(transform.position, Item.ItemRarity.Common);
+            ItemPickup.Spawn(transform.position, Item.ItemRarity.Scrap);
         }
+        else if (random < GameManager.monsterValues.unempoweredMonsterMilitaryGradeDropChance)
+        {
+            ItemPickup.Spawn(transform.position, Item.ItemRarity.MilitaryGrade);
+        }
+        else if (random < GameManager.monsterValues.unempoweredMonsterUniqueDropChance)
+        {
+            ItemPickup.Spawn(transform.position, Item.ItemRarity.Unique);
+        }
+        else if (random < GameManager.monsterValues.unempoweredMonsterMemorabiliaDropChance)
+        {
+            ItemPickup.Spawn(transform.position, Item.ItemRarity.Memorabilia);
+        }
+
 
         if (Random.value < GameManager.monsterValues.goldDropChance)
         {
