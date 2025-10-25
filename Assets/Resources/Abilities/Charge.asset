@@ -23,7 +23,7 @@ MonoBehaviour:
   abilityAnimation: One Hand Slash
   range: 10
   castTime: 0
-  abilityCooldown: 10
+  abilityCooldown: 5
   abilityCost: 0
   movementLock: 0.5
   animationActivationPosition: 0.5
