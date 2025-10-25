@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ba5be5e9a4ad5d49a4183e2e4440724, type: 3}
-  m_Name: Healing Potion
+  m_Name: Healing Stim
   m_EditorClassIdentifier: 
   engine:
     rid: 8495770697921200309
-  abilityName: Healing Potion
+  abilityName: Healing Stim
   abilityFlavourText: 
   abilityIcon: {fileID: 21300000, guid: fe8e6a489e2efde4fa02ee13706a2edf, type: 3}
   targetMode: 0

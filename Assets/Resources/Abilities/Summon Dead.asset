@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ba5be5e9a4ad5d49a4183e2e4440724, type: 3}
-  m_Name: Summon Skeleton
+  m_Name: Summon Dead
   m_EditorClassIdentifier: 
   engine:
     rid: 2658598258988810331
-  abilityName: Summon Skeleton
+  abilityName: Summon Dead
+  abilityFlavourText: 
   abilityIcon: {fileID: 21300000, guid: c1e3dcf9cbd4a1a4a82b01776c97e109, type: 3}
   targetMode: 4
   abilityDescription: Summons a Spectral Archer near the casting unit.
@@ -36,6 +37,7 @@ MonoBehaviour:
   castCompleteSoundVolume: 1
   needsReminderFlash: 0
   isUnlocked: 1
+  abilityTag: 
   references:
     version: 2
     RefIds:
@@ -67,10 +69,10 @@ MonoBehaviour:
         parentNode:
           rid: -2
         parentNodeID: -1
+        indent: 0
         presetName: 
         variableName: 
         stringSuffix: 
-        indent: 0
         nodeIcon: Event
         allowValue: 1
         allowPreset: 1
@@ -93,10 +95,10 @@ MonoBehaviour:
         parentNode:
           rid: -2
         parentNodeID: -1
+        indent: 0
         presetName: 
         variableName: 
         stringSuffix: 
-        indent: 0
         nodeIcon: Unit
         allowValue: 1
         allowPreset: 1
@@ -113,10 +115,10 @@ MonoBehaviour:
         parentNode:
           rid: 2658598258988810333
         parentNodeID: 0
+        indent: 0
         presetName: 
         variableName: 
         stringSuffix: 
-        indent: 0
         nodeIcon: 
         allowValue: 1
         allowPreset: 0
@@ -136,10 +138,10 @@ MonoBehaviour:
         parentNode:
           rid: 2658598258988810333
         parentNodeID: 1
+        indent: 0
         presetName: 
         variableName: 
         stringSuffix: 
-        indent: 0
         nodeIcon: 
         allowValue: 1
         allowPreset: 1
@@ -157,10 +159,10 @@ MonoBehaviour:
         parentNode:
           rid: 2658598258988810337
         parentNodeID: 0
+        indent: 0
         presetName: 
         variableName: 
         stringSuffix: m
-        indent: 0
         nodeIcon: 
         allowValue: 1
         allowPreset: 1
@@ -178,10 +180,10 @@ MonoBehaviour:
         parentNode:
           rid: 2658598258988810337
         parentNodeID: 1
+        indent: 0
         presetName: Casting Unit
         variableName: 
         stringSuffix: 
-        indent: 0
         nodeIcon: 
         allowValue: 0
         allowPreset: 1
