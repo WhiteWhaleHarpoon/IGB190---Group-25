@@ -16,7 +16,7 @@ MonoBehaviour:
     rid: 6728881625767084675
   abilityName: Dark Matter Blast
   abilityFlavourText: 
-  abilityIcon: {fileID: 21300000, guid: 2ffc6d0165d9c4345a4bb15e6dc86959, type: 3}
+  abilityIcon: {fileID: 21300000, guid: 7dfcb236ea65d48f58dd8764a42343aa, type: 3}
   targetMode: 4
   abilityDescription: Fire a ball of electricity towards target location, dealing
     150% attack damage to all enemies near the impact area.

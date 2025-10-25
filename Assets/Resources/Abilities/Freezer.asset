@@ -16,7 +16,7 @@ MonoBehaviour:
     rid: 248813148035088384
   abilityName: Freezer
   abilityFlavourText: 
-  abilityIcon: {fileID: 21300000, guid: 8d57994d9cf02cb4ca5cd0df28851f98, type: 3}
+  abilityIcon: {fileID: 21300000, guid: ab3f415dd3a0c4018b64f1cbd0b2a13e, type: 3}
   targetMode: 4
   abilityDescription: Icicles rain from the sky towards the target location, dealing
     320% attack damage over 8 seconds and slowing enemies hit by 70%.

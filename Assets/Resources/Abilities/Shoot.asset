@@ -16,7 +16,7 @@ MonoBehaviour:
     rid: 8495770740755267676
   abilityName: Shoot
   abilityFlavourText: 
-  abilityIcon: {fileID: 21300000, guid: 0dca40780abbbbc47bb173ceabca94f6, type: 3}
+  abilityIcon: {fileID: 21300000, guid: f1179cb518ad444a78dab4d95cedcf31, type: 3}
   targetMode: 4
   abilityDescription: Fire an arrow towards the target location, dealing 100% attack
     damage to the enemy hit.

@@ -16,7 +16,7 @@ MonoBehaviour:
     rid: 1908413637243437056
   abilityName: Dash
   abilityFlavourText: 
-  abilityIcon: {fileID: 21300000, guid: 7e5b9a5dea307ab4d9aad2a277180fb3, type: 3}
+  abilityIcon: {fileID: 21300000, guid: 65b62615537cc4126916e92d76a50c93, type: 3}
   targetMode: 4
   abilityDescription: Quickly roll towards the targeted location and increase your
     attack speed by 30% for 3 seconds.

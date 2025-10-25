@@ -16,7 +16,7 @@ MonoBehaviour:
     rid: 114884026135740416
   abilityName: Punch
   abilityFlavourText: 
-  abilityIcon: {fileID: 21300000, guid: 7952f6ff49298fd44a3cf9954c4102cf, type: 3}
+  abilityIcon: {fileID: 21300000, guid: 12c4ca6b33c0143aca825d85d300c4e8, type: 3}
   targetMode: 3
   abilityDescription: Slash towards the target unit, dealing 100% attack damage.
   abilityAnimation: One Hand Slash

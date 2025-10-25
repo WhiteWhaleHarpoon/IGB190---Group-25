@@ -16,7 +16,7 @@ MonoBehaviour:
     rid: 4796092190316822901
   abilityName: Captain's Rage
   abilityFlavourText: 
-  abilityIcon: {fileID: 21300000, guid: 8095cd4e844ae5d4f9ffee0df9cba6f5, type: 3}
+  abilityIcon: {fileID: 21300000, guid: d2f12babccc2749fb89ce96ba84c62a3, type: 3}
   targetMode: 0
   abilityDescription: Spin around in a circle wildly attacking all nearby enemies
     for 120% attack damage every second.

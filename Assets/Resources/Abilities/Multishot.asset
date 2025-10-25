@@ -16,7 +16,7 @@ MonoBehaviour:
     rid: 8495770740755267717
   abilityName: Multishot
   abilityFlavourText: 
-  abilityIcon: {fileID: 21300000, guid: de6faf741a2fc054b855d929d52a75cf, type: 3}
+  abilityIcon: {fileID: 21300000, guid: dd6f150d6c68548fe878219e503b4397, type: 3}
   targetMode: 4
   abilityDescription: Fires five arrows in a cone towards the target location, each
     dealing 150% attack damage on impact.

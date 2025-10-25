@@ -16,7 +16,7 @@ MonoBehaviour:
     rid: 1908413637243437076
   abilityName: Quickshot
   abilityFlavourText: 
-  abilityIcon: {fileID: 21300000, guid: bce4d42e2f3405745a83d09807e11042, type: 3}
+  abilityIcon: {fileID: 21300000, guid: 530e2917bd6a4444d8d188f48950d991, type: 3}
   targetMode: 4
   abilityDescription: Quickly fire three arrows towards the target location, each
     dealing 20% weapon damage on contact.

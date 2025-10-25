@@ -16,7 +16,7 @@ MonoBehaviour:
     rid: 2658598258988810331
   abilityName: Summon Dead
   abilityFlavourText: 
-  abilityIcon: {fileID: 21300000, guid: c1e3dcf9cbd4a1a4a82b01776c97e109, type: 3}
+  abilityIcon: {fileID: 21300000, guid: 54838b2140346489a871da30e3a1087c, type: 3}
   targetMode: 4
   abilityDescription: Summons a Spectral Archer near the casting unit.
   abilityAnimation: None

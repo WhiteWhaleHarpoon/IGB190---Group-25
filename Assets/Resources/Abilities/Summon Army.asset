@@ -15,7 +15,8 @@ MonoBehaviour:
   engine:
     rid: 248813056113770974
   abilityName: Summon Army
-  abilityIcon: {fileID: 21300000, guid: c1e3dcf9cbd4a1a4a82b01776c97e109, type: 3}
+  abilityFlavourText: 
+  abilityIcon: {fileID: 21300000, guid: 54838b2140346489a871da30e3a1087c, type: 3}
   targetMode: 4
   abilityDescription: Summon a group of monsters, and one empowered monster.
   abilityAnimation: One Hand Slash
@@ -36,6 +37,7 @@ MonoBehaviour:
   castCompleteSoundVolume: 1
   needsReminderFlash: 0
   isUnlocked: 1
+  abilityTag: 
   references:
     version: 2
     RefIds:

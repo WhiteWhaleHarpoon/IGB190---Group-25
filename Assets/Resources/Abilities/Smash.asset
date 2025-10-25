@@ -16,7 +16,7 @@ MonoBehaviour:
     rid: 8495770697921200135
   abilityName: Smash
   abilityFlavourText: 
-  abilityIcon: {fileID: 21300000, guid: 5c06d58fe97ebfb40ad16877f1488733, type: 3}
+  abilityIcon: {fileID: 21300000, guid: 4db1c0e20b55640daa9823b0e193525c, type: 3}
   targetMode: 3
   abilityDescription: Swing with a mighty attack, dealing 50% attack damage to all
     units in front of the caster.

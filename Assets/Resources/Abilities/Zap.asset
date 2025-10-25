@@ -16,7 +16,7 @@ MonoBehaviour:
     rid: 6728881672129871875
   abilityName: Zap
   abilityFlavourText: 
-  abilityIcon: {fileID: 21300000, guid: d188ae3e513c88f4689a9620e9e0fbdc, type: 3}
+  abilityIcon: {fileID: 21300000, guid: 219517ceb947c48d9afdeb273292fcce, type: 3}
   targetMode: 4
   abilityDescription: Fire a ball of electricity towards target location, dealing
     60% attack damage to all enemies near the impact area.
