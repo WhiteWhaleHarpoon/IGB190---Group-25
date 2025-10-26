@@ -1799,28 +1799,22 @@ MonoBehaviour:
   stayFadedTime: 0.5
   panTime: 12
   introItems:
-  - sprite: {fileID: 21300000, guid: fff56c6ab133b9b438c153c5a20e9e90, type: 3}
+  - sprite: {fileID: 21300000, guid: 3d6202b1cde7544ae8dae5180e3ecf67, type: 3}
     message: You defeated the skeleton lord, but your ship is on fire.
     clip: {fileID: 0}
     time: 6
     start: {x: -70, y: -200}
     end: {x: 0, y: 0}
-  - sprite: {fileID: 21300000, guid: b9ce18d5c9a51f546acbeb0f971737d1, type: 3}
+  - sprite: {fileID: 21300000, guid: 8179b04ff56e640d79d07fcb9d5ab963, type: 3}
     message: You crashland in the swamp of an alien planet.
     clip: {fileID: 0}
     time: 6
     start: {x: -210, y: -120}
     end: {x: 0, y: 0}
-  - sprite: {fileID: 21300000, guid: 31613a25aec54be43b7ddcc71eb68c18, type: 3}
+  - sprite: {fileID: 21300000, guid: 48fb450af245b4151976bf3ed21e443b, type: 3}
     message: Will you survive!?!?!
     clip: {fileID: 0}
     time: 6
-    start: {x: -190, y: -200}
-    end: {x: 0, y: 0}
-  - sprite: {fileID: 21300000, guid: b0dafc10d14141b489fa2584f26c9fa8, type: 3}
-    message: And so you head back into the vastness of space.
-    clip: {fileID: 0}
-    time: 8
     start: {x: -190, y: -200}
     end: {x: 0, y: 0}
   - sprite: {fileID: 21300000, guid: 16c00c5b9b8068e43bc573dccca3c5aa, type: 3}
