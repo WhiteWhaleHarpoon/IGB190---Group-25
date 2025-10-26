@@ -16,7 +16,7 @@ MonoBehaviour:
   itemDescription: 
   itemTag: 
   itemFlavourText: 
-  classRequirement: cap
+  classRequirement: 
   itemIcon: {fileID: 21300000, guid: 5ee626c5c13289943ba7685e2a78f431, type: 3}
   itemType: 1
   itemRarity: 3
