@@ -52516,39 +52516,39 @@ MonoBehaviour:
     baseGoldDropAmountMinimum: 10
     baseGoldDropAmountMaximum: 20
     goldDropChance: 0.2
-    unempoweredMonsterscrapDropChance: 1
-    unempoweredMonsterImportGoodsDropChance: 0.15
-    unempoweredMonsterFineTunedDropChance: 0.1
-    unempoweredMonsterMilitaryGradeDropChance: 0.01
+    unempoweredMonsterscrapDropChance: 0.45
+    unempoweredMonsterImportGoodsDropChance: 0.1
+    unempoweredMonsterFineTunedDropChance: 0.05
+    unempoweredMonsterMilitaryGradeDropChance: 0.03
     unempoweredMonsterUniqueDropChance: 0.01
-    unempoweredMonsterMemorabiliaDropChance: 0
+    unempoweredMonsterMemorabiliaDropChance: 0.01
   _empoweredMonsterValues:
     empoweredMonsterHealthModifier: 2
     empoweredMonsterDamageModifier: 2
     empoweredMonsterAttackSpeedModifier: 1
     empoweredMonsterXPModifier: 5
     empoweredMonsterGoldModifier: 3
-    empoweredMonsterscrapDropChance: 1
-    empoweredMonsterImportGoodsDropChance: 0.2
-    empoweredMonsterFineTunedDropChance: 0
-    empoweredMonsterMilitaryGradeDropChance: 0
-    empoweredMonsterUniqueDropChance: 0
-    empoweredMonsterMemorabiliaDropChance: 0
+    empoweredMonsterscrapDropChance: 0
+    empoweredMonsterImportGoodsDropChance: 0.02
+    empoweredMonsterFineTunedDropChance: 0.1
+    empoweredMonsterMilitaryGradeDropChance: 0.18
+    empoweredMonsterUniqueDropChance: 0.175
+    empoweredMonsterMemorabiliaDropChance: 0.175
   _playerExperienceValues:
-    baseMonsterXP: 10
-    startingXPPerLevel: 100
-    additionalMaxXPPerLevel: 20
+    baseMonsterXP: 25
+    startingXPPerLevel: 200
+    additionalMaxXPPerLevel: 400
   _monsterScalingValues:
-    increasedHealthPerPlayerLevel: 0.25
-    increasedDamagePerPlayerLevel: 0.25
+    increasedHealthPerPlayerLevel: 0.37
+    increasedDamagePerPlayerLevel: 0.4
   _healthGlobeValues:
     baseHealthGlobeChance: 0.2
-    reducedChancePerExistingGlobe: 0
+    reducedChancePerExistingGlobe: 0.1
     spawnRadius: 6
     lifetime: 5
     healthGlobeHealthRestore: 50
   _inventoryValues:
-    sellItemReturnRate: 0.25
+    sellItemReturnRate: 0.4
   _armorValues:
     maxArmor: 1000
     armorDamageReductionCurve:
@@ -52604,8 +52604,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 161053b92e03d8f4ab9039323af1daa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  showErrors: 1
-  stopScriptExecutionOnError: 1
+  showErrors: 0
+  stopScriptExecutionOnError: 0
 --- !u!114 &1998604233
 MonoBehaviour:
   m_ObjectHideFlags: 0
