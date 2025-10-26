@@ -21,6 +21,7 @@ MonoBehaviour:
       - rid: 2412806294631088666
       conditionNodes: []
       actionNodes:
+      - rid: 2412806294631088696
       - rid: 2412806294631088668
       - rid: 2412806294631088671
       - rid: 2412806294631088692
@@ -34,6 +35,7 @@ MonoBehaviour:
       conditionNodes:
       - rid: 2412806294631088681
       actionNodes:
+      - rid: 2412806294631088698
       - rid: 2412806294631088683
       - rid: 2412806294631088689
       - rid: 2412806294631088686
@@ -649,3 +651,89 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: 1
+    - rid: 2412806294631088696
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: DestroyRegions
+        functionDescription: Region/Destroy Region
+        functionDynamicDescription: Destroy regions named $
+        functionEvaluators:
+        - rid: 2412806294631088697
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Region
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2412806294631088697
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Region Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2412806294631088696
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: maze
+        options: []
+    - rid: 2412806294631088698
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: DestroyRegions
+        functionDescription: Region/Destroy Region
+        functionDynamicDescription: Destroy regions named $
+        functionEvaluators:
+        - rid: 2412806294631088699
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Region
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2412806294631088699
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Region Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2412806294631088698
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: maze reward
+        options: []
