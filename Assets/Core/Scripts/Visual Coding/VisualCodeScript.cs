@@ -113,7 +113,7 @@ public partial class VisualCodeScript
     /// </summary>
     public void RunScript(Dictionary<string, object> presets, LogicEngine engine, string eventTrigger = "", object reqs = null)
     {
-        if (engine.disabledScripts.ContainsKey(this) && Time.time > engine.disabledScripts[this]) return;
+        if (engine.disabledScripts.ContainsKey(this) && Time.time < engine.disabledScripts[this]) return;
         LogicEngine.current = engine;
 
         // Handle the events.
