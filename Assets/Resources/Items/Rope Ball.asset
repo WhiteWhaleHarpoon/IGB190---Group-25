@@ -17,7 +17,7 @@ MonoBehaviour:
   itemTag: 
   itemFlavourText: 
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: dec0e5c63c493a445bae12790f311f74, type: 3}
+  itemIcon: {fileID: 21300000, guid: 44f20859f6297e743828b5771263e581, type: 3}
   itemType: 4
   itemRarity: 1
   itemCost: 1600

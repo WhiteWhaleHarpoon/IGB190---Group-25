@@ -20,7 +20,7 @@ MonoBehaviour:
   itemFlavourText: '"Didn''t you promise me to stay on the Wagon this time honey?"
     - Julia Rivers ''Captain''s wife'''
   classRequirement: 
-  itemIcon: {fileID: 21300000, guid: dec0e5c63c493a445bae12790f311f74, type: 3}
+  itemIcon: {fileID: 21300000, guid: 1ceefdb916879ac4ebc99315040cabe7, type: 3}
   itemType: 2
   itemRarity: 5
   itemCost: 8000
