@@ -10,44 +10,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76ef298ccb713614cb4f11ef9d2c39cd, type: 3}
-  m_Name: QUEEEEST
+  m_Name: Quest-Purchase
   m_EditorClassIdentifier: 
   engine:
     scripts:
-    - scriptName: quest statrneklrgjn
-      scriptUID: 1724046261
+    - scriptName: Quest start
+      scriptUID: 674682552
       hasWait: 0
       eventNodes:
-      - rid: 1529388281369722955
-      conditionNodes: []
-      actionNodes:
-      - rid: 1529388281369722956
-      - rid: 1529388281369722958
-      - rid: 1529388281369722962
-    - scriptName: Quest prog
-      scriptUID: 2083955038
-      hasWait: 0
-      eventNodes:
-      - rid: 2412806294631088128
+      - rid: 2412806294631088283
       conditionNodes:
-      - rid: 2412806294631088129
+      - rid: 2412806294631088284
       actionNodes:
-      - rid: 2412806294631088131
+      - rid: 2412806294631088288
+      - rid: 2412806294631088292
+      - rid: 2412806294631088295
+    - scriptName: Quest complete
+      scriptUID: 401297990
+      hasWait: 0
+      eventNodes:
+      - rid: 2412806294631088296
+      conditionNodes:
+      - rid: 2412806294631088297
+      actionNodes:
+      - rid: 2412806294631088299
   references:
     version: 2
     RefIds:
     - rid: -2
       type: {class: , ns: , asm: }
-    - rid: 1529388281369722955
+    - rid: 2412806294631088283
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
         tempName: 
-        functionName: WhenUnitIsKilled
-        functionDescription: Unit/Unit is killed
-        functionDynamicDescription: 'When a unit is killed (Presets: <color=yellow>Killed
-          Unit</color>, <color=yellow>Killing Unit</color>, <color=yellow>Killing
-          Ability</color>, <color=yellow>Is Critical</color>)'
+        functionName: OnPickupGold
+        functionDescription: Player/Player picks up gold
+        functionDynamicDescription: 'When the player picks up gold (Presets: <color=yellow>Gold
+          Added</color>)'
         functionEvaluators: []
         parentNode:
           rid: -2
@@ -56,25 +56,24 @@ MonoBehaviour:
         presetName: 
         variableName: 
         stringSuffix: 
-        nodeIcon: Event
+        nodeIcon: Pickup
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
         presets:
-        - Killed Unit
-        - Killing Unit
-        - Killing Ability
-        - Is Critical
-    - rid: 1529388281369722956
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+        - Gold Added
+    - rid: 2412806294631088284
+      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
         tempName: 
-        functionName: CreateQuest2
-        functionDescription: Quests/Create Quest
-        functionDynamicDescription: Give the player a quest named $
+        functionName: NumberComparison
+        functionDescription: Comparisons/Number Comparison
+        functionDynamicDescription: $ $ $
         functionEvaluators:
-        - rid: 1529388281369722957
+        - rid: 2412806294631088285
+        - rid: 2412806294631088286
+        - rid: 2412806294631088287
         parentNode:
           rid: -2
         parentNodeID: -1
@@ -82,21 +81,22 @@ MonoBehaviour:
         presetName: 
         variableName: 
         stringSuffix: 
-        nodeIcon: QuestNew
+        nodeIcon: Condition
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-    - rid: 1529388281369722957
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+        value: 0
+    - rid: 2412806294631088285
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
-        returnType: 0
-        tempName: Quest Name
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
+        returnType: 2
+        tempName: 
+        functionName: GetPlayerGold
+        functionDescription: Player/Player Gold
+        functionDynamicDescription: Player Gold
         functionEvaluators: []
         parentNode:
-          rid: 1529388281369722956
+          rid: 2412806294631088284
         parentNodeID: 0
         indent: 0
         presetName: 
@@ -106,64 +106,18 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Slayer
-        options: []
-    - rid: 1529388281369722958
-      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+        value: 0
+    - rid: 2412806294631088286
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
-        returnType: 2
+        returnType: 0
         tempName: 
-        functionName: AddQuestRequirement2
-        functionDescription: Quests/Add Quest Requirement
-        functionDynamicDescription: Add $ requirement to $ with $ progress increments
-        functionEvaluators:
-        - rid: 1529388281369722959
-        - rid: 1529388281369722960
-        - rid: 1529388281369722961
-        parentNode:
-          rid: -2
-        parentNodeID: -1
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: QuestNew
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-    - rid: 1529388281369722959
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Requirement
         functionName: 
         functionDescription: 
         functionDynamicDescription: 
         functionEvaluators: []
         parentNode:
-          rid: 1529388281369722958
-        parentNodeID: 0
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: Elimination Protocol
-        options: []
-    - rid: 1529388281369722960
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Quest Name
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 1529388281369722958
+          rid: 2412806294631088284
         parentNodeID: 1
         indent: 0
         presetName: 
@@ -171,11 +125,17 @@ MonoBehaviour:
         stringSuffix: 
         nodeIcon: 
         allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: Slayer
-        options: []
-    - rid: 1529388281369722961
+        allowPreset: 0
+        allowFunction: 0
+        value: Greater Than or Equal To
+        options:
+        - Equal To
+        - Not Equal To
+        - Less Than
+        - Less Than or Equal To
+        - Greater Than
+        - Greater Than or Equal To
+    - rid: 2412806294631088287
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
@@ -185,7 +145,7 @@ MonoBehaviour:
         functionDynamicDescription: 
         functionEvaluators: []
         parentNode:
-          rid: 1529388281369722958
+          rid: 2412806294631088284
         parentNodeID: 2
         indent: 0
         presetName: 
@@ -195,8 +155,162 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 15
-    - rid: 1529388281369722962
+        value: 1000
+    - rid: 2412806294631088288
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddQuestRequirement2
+        functionDescription: Quests/Add Quest Requirement
+        functionDynamicDescription: Add $ requirement to $ with $ progress increments
+        functionEvaluators:
+        - rid: 2412806294631088289
+        - rid: 2412806294631088290
+        - rid: 2412806294631088291
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: QuestNew
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2412806294631088289
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Requirement
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2412806294631088288
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Purchase
+        options: []
+    - rid: 2412806294631088290
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Quest Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2412806294631088288
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Shopping time
+        options: []
+    - rid: 2412806294631088291
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2412806294631088288
+        parentNodeID: 2
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 1
+    - rid: 2412806294631088292
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddQuestReward2
+        functionDescription: Quests/Add Quest Reward
+        functionDynamicDescription: Add reward labeled $ to quest $
+        functionEvaluators:
+        - rid: 2412806294631088293
+        - rid: 2412806294631088294
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: QuestNew
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2412806294631088293
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Reward
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2412806294631088292
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 500 Gold
+        options: []
+    - rid: 2412806294631088294
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Quest Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2412806294631088292
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: Shopping time
+        options: []
+    - rid: 2412806294631088295
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -216,16 +330,15 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-    - rid: 2412806294631088128
+    - rid: 2412806294631088296
       type: {class: EventNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
         tempName: 
-        functionName: WhenUnitIsKilled
-        functionDescription: Unit/Unit is killed
-        functionDynamicDescription: 'When a unit is killed (Presets: <color=yellow>Killed
-          Unit</color>, <color=yellow>Killing Unit</color>, <color=yellow>Killing
-          Ability</color>, <color=yellow>Is Critical</color>)'
+        functionName: OnItemBought
+        functionDescription: Player/Player buys an item
+        functionDynamicDescription: 'When the player buys an item (Presets: <color=yellow>Triggering
+          Item</color>)'
         functionEvaluators: []
         parentNode:
           rid: -2
@@ -239,11 +352,8 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets:
-        - Killed Unit
-        - Killing Unit
-        - Killing Ability
-        - Is Critical
-    - rid: 2412806294631088129
+        - Triggering Item
+    - rid: 2412806294631088297
       type: {class: BoolNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
@@ -252,7 +362,7 @@ MonoBehaviour:
         functionDescription: Quest/Quest Is Active
         functionDynamicDescription: Quest named $ is currently active
         functionEvaluators:
-        - rid: 2412806294631088130
+        - rid: 2412806294631088298
         parentNode:
           rid: -2
         parentNodeID: -1
@@ -265,7 +375,7 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: 0
-    - rid: 2412806294631088130
+    - rid: 2412806294631088298
       type: {class: StringNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
@@ -275,7 +385,7 @@ MonoBehaviour:
         functionDynamicDescription: 
         functionEvaluators: []
         parentNode:
-          rid: 2412806294631088129
+          rid: 2412806294631088297
         parentNodeID: 0
         indent: 0
         presetName: 
@@ -285,19 +395,18 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: Slayer
+        value: Shopping time
         options: []
-    - rid: 2412806294631088131
+    - rid: 2412806294631088299
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2
         tempName: 
-        functionName: ModifyQuestRequirementProgress2
-        functionDescription: Quests/Modify Quest Progress
-        functionDynamicDescription: Modify quest progress of $ by $
+        functionName: AddGold
+        functionDescription: Player/Add Gold
+        functionDynamicDescription: Add $ gold to the player
         functionEvaluators:
-        - rid: 2412806294631088132
-        - rid: 2412806294631088133
+        - rid: 2412806294631088300
         parentNode:
           rid: -2
         parentNodeID: -1
@@ -305,33 +414,11 @@ MonoBehaviour:
         presetName: 
         variableName: 
         stringSuffix: 
-        nodeIcon: QuestNew
+        nodeIcon: Unit
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-    - rid: 2412806294631088132
-      type: {class: StringNode, ns: , asm: Assembly-CSharp}
-      data:
-        returnType: 0
-        tempName: Quest Name
-        functionName: 
-        functionDescription: 
-        functionDynamicDescription: 
-        functionEvaluators: []
-        parentNode:
-          rid: 2412806294631088131
-        parentNodeID: 0
-        indent: 0
-        presetName: 
-        variableName: 
-        stringSuffix: 
-        nodeIcon: 
-        allowValue: 1
-        allowPreset: 1
-        allowFunction: 1
-        value: Slayer
-        options: []
-    - rid: 2412806294631088133
+    - rid: 2412806294631088300
       type: {class: NumberNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 0
@@ -341,8 +428,8 @@ MonoBehaviour:
         functionDynamicDescription: 
         functionEvaluators: []
         parentNode:
-          rid: 2412806294631088131
-        parentNodeID: 1
+          rid: 2412806294631088299
+        parentNodeID: 0
         indent: 0
         presetName: 
         variableName: 
@@ -351,4 +438,4 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 1
+        value: 500

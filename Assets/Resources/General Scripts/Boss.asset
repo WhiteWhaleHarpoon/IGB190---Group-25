@@ -44,10 +44,10 @@ MonoBehaviour:
         parentNode:
           rid: -2
         parentNodeID: -1
+        indent: 0
         presetName: 
         variableName: 
         stringSuffix: 
-        indent: 0
         nodeIcon: Event
         allowValue: 1
         allowPreset: 1
@@ -70,10 +70,10 @@ MonoBehaviour:
         parentNode:
           rid: -2
         parentNodeID: -1
+        indent: 0
         presetName: 
         variableName: 
         stringSuffix: 
-        indent: 0
         nodeIcon: Condition
         allowValue: 1
         allowPreset: 1
@@ -91,10 +91,10 @@ MonoBehaviour:
         parentNode:
           rid: -2
         parentNodeID: -1
+        indent: 0
         presetName: 
         variableName: 
         stringSuffix: 
-        indent: 0
         nodeIcon: Game
         allowValue: 1
         allowPreset: 1
@@ -112,10 +112,10 @@ MonoBehaviour:
         parentNode:
           rid: -2
         parentNodeID: -1
+        indent: 0
         presetName: 
         variableName: 
         stringSuffix: 
-        indent: 0
         nodeIcon: Audio
         allowValue: 1
         allowPreset: 1
@@ -134,10 +134,10 @@ MonoBehaviour:
         parentNode:
           rid: -2
         parentNodeID: -1
+        indent: 0
         presetName: 
         variableName: 
         stringSuffix: 
-        indent: 0
         nodeIcon: QuestNew
         allowValue: 1
         allowPreset: 1
@@ -154,10 +154,10 @@ MonoBehaviour:
         parentNode:
           rid: 4184214666226172888
         parentNodeID: 0
+        indent: 0
         presetName: Killed Unit
         variableName: 
         stringSuffix: 
-        indent: 0
         nodeIcon: 
         allowValue: 1
         allowPreset: 1
@@ -175,10 +175,10 @@ MonoBehaviour:
         parentNode:
           rid: 4184214666226172888
         parentNodeID: 1
+        indent: 0
         presetName: 
         variableName: 
         stringSuffix: 
-        indent: 0
         nodeIcon: 
         allowValue: 1
         allowPreset: 1
@@ -196,10 +196,10 @@ MonoBehaviour:
         parentNode:
           rid: 4184214666226172890
         parentNodeID: 0
+        indent: 0
         presetName: 
         variableName: 
         stringSuffix: 
-        indent: 0
         nodeIcon: 
         allowValue: 1
         allowPreset: 1
@@ -217,10 +217,10 @@ MonoBehaviour:
         parentNode:
           rid: 4184214666226172891
         parentNodeID: 0
+        indent: 0
         presetName: 
         variableName: 
         stringSuffix: 
-        indent: 0
         nodeIcon: 
         allowValue: 1
         allowPreset: 1
@@ -239,10 +239,10 @@ MonoBehaviour:
         parentNode:
           rid: 4184214666226172891
         parentNodeID: 1
+        indent: 0
         presetName: 
         variableName: 
         stringSuffix: 
-        indent: 0
         nodeIcon: 
         allowValue: 1
         allowPreset: 1
