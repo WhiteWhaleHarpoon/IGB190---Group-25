@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76ef298ccb713614cb4f11ef9d2c39cd, type: 3}
-  m_Name: 'quest - equipment '
+  m_Name: quest - shiny (first equipment)
   m_EditorClassIdentifier: 
   engine:
     scripts:
@@ -33,6 +33,7 @@ MonoBehaviour:
       - rid: 2412806294631088352
       actionNodes:
       - rid: 2412806294631088354
+      - rid: 2412806294631088385
     - scriptName: quest reward
       scriptUID: 211090102
       hasWait: 0
@@ -462,6 +463,26 @@ MonoBehaviour:
         allowFunction: 1
         value: 100
     - rid: 2412806294631088363
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: DisableScript
+        functionDescription: Flow/Disable This Script
+        functionDynamicDescription: Disable this script
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Cancel
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2412806294631088385
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
         returnType: 2

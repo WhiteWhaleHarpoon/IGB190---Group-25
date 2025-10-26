@@ -25,6 +25,7 @@ MonoBehaviour:
       - rid: 2412806294631088324
       - rid: 2412806294631088312
       - rid: 2412806294631088315
+      - rid: 2412806294631088375
       - rid: 2412806294631088319
     - scriptName: fixing beacon
       scriptUID: 278180238
@@ -744,3 +745,69 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         value: 400
+    - rid: 2412806294631088375
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddQuestReward2
+        functionDescription: Quests/Add Quest Reward
+        functionDynamicDescription: Add reward labeled $ to quest $
+        functionEvaluators:
+        - rid: 2412806294631088376
+        - rid: 2412806294631088377
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: QuestNew
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 2412806294631088376
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Reward
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2412806294631088375
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 400 Gold
+        options: []
+    - rid: 2412806294631088377
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Quest Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 2412806294631088375
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: silent beacon
+        options: []
