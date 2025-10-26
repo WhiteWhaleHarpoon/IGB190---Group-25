@@ -35,12 +35,12 @@ public class Player : Unit
 
     //  Constants related to the player.
     public const int MAX_INVENTORY_SIZE = 28;
-    private const int Trinket = 0;
-    private const int ChestPlate = 1;
-    private const int WeaponPiece1 = 2;
-    private const int WeaponPiece2 = 3;
-    private const int Helmet = 4;
-    private const int RING2 = 5;
+    private const int Helmet = 0;
+    private const int Chestplate = 1;
+    private const int Trinket = 2;
+    private const int WeaponPiece1 = 3;
+    private const int WeaponPiece2 = 4;
+    private const int WeaponPiece3 = 5;
     private const int LEFT = 0;
     private const int RIGHT = 1;
     private const int TOTAL_EQUIPMENT_SLOTS = 6;
@@ -104,10 +104,11 @@ public class Player : Unit
     /// Set up the sell slot for the player. Adding an item to the sell slot
     /// will auto sell it and give the gold to the player.
     /// </summary>
-    private void SetupSellSlot ()
+    private void SetupSellSlot()
     {
         sellSlot = new Inventory(SELL_INVENTORY_SIZE);
-        sellSlot.onItemAdded.AddListener((item) => {
+        sellSlot.onItemAdded.AddListener((item) =>
+        {
             SellItem(item);
             sellSlot.RemoveItem(item);
         });
@@ -140,14 +141,20 @@ public class Player : Unit
         //    return;
 
         // Auto-equip items if the player is not wearing an item in that slot.
-        if (item.itemType == Item.ItemType.Trinket && equipment.IsEmpty(Trinket)) {
+        if (item.itemType == Item.ItemType.Helmet && equipment.IsEmpty(Helmet))
+        {
             inventory.RemoveItem(item);
-            equipment.AddItemAtID(item, Trinket);
+            equipment.AddItemAtID(item, Helmet);
         }
         else if (item.itemType == Item.ItemType.ChestPlate && equipment.IsEmpty(ChestPlate))
         {
             inventory.RemoveItem(item);
             equipment.AddItemAtID(item, ChestPlate);
+        }
+        {
+        else if (item.itemType == Item.ItemType.Trinket && equipment.IsEmpty(Trinket)) {
+            inventory.RemoveItem(item);
+            equipment.AddItemAtID(item, Trinket);
         }
         else if (item.itemType == Item.ItemType.WeaponPiece1 && equipment.IsEmpty(WeaponPiece1))
         {
@@ -159,12 +166,8 @@ public class Player : Unit
             inventory.RemoveItem(item);
             equipment.AddItemAtID(item, WeaponPiece2);
         }
-        else if (item.itemType == Item.ItemType.Helmet && equipment.IsEmpty(Helmet))
-        {
-            inventory.RemoveItem(item);
-            equipment.AddItemAtID(item, Helmet);
-        }
-        else if (item.itemType == Item.ItemType.Ring && equipment.IsEmpty(WeaponPiece3))
+      
+        else if (item.itemType == Item.ItemType.WeaponPiece3 && equipment.IsEmpty(WeaponPiece3))
         {
             inventory.RemoveItem(item);
             equipment.AddItemAtID(item, WeaponPiece3);

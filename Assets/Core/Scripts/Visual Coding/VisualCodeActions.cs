@@ -394,26 +394,23 @@ public partial class VisualCodeScript
     {
         Error(item == null, "The specified item is invalid.");
         item = item.RollItem();
-        if (item.itemType == Item.ItemType.Trinket)
+        if (item.itemType == Item.ItemType.Helmet)
             GameManager.player.equipment.AddItemAtID(item, 0);
 
         else if (item.itemType == Item.ItemType.ChestPlate)
             GameManager.player.equipment.AddItemAtID(item, 1);
 
-        else if (item.itemType == Item.ItemType.WeaponPiece1)
+        else if (item.itemType == Item.ItemType.Trinket)
             GameManager.player.equipment.AddItemAtID(item, 2);
 
-        else if (item.itemType == Item.ItemType.WeaponPiece2)
+        else if (item.itemType == Item.ItemType.WeaponPiece1)
             GameManager.player.equipment.AddItemAtID(item, 3);
 
-        else if (item.itemType == Item.ItemType.Helmet && GameManager.player.equipment.GetItemAtID(4) == null)
+        else if (item.itemType == Item.ItemType.WeaponPiece2)
             GameManager.player.equipment.AddItemAtID(item, 4);
 
-        else if (item.itemType == Item.ItemType.Helmet && GameManager.player.equipment.GetItemAtID(5) == null)
+        else if (item.itemType == Item.ItemType.WeaponPiece3)
             GameManager.player.equipment.AddItemAtID(item, 5);
-
-        else if (item.itemType == Item.ItemType.Helmet)
-            GameManager.player.equipment.AddItemAtID(item, 4);
     }
 
     [VisualScriptingFunction(
