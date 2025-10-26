@@ -1,0 +1,209 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ef298ccb713614cb4f11ef9d2c39cd, type: 3}
+  m_Name: QUEEEEST
+  m_EditorClassIdentifier: 
+  engine:
+    scripts:
+    - scriptName: quest statrneklrgjn
+      scriptUID: 1724046261
+      hasWait: 0
+      eventNodes:
+      - rid: 1529388281369722955
+      conditionNodes: []
+      actionNodes:
+      - rid: 1529388281369722956
+      - rid: 1529388281369722958
+      - rid: 1529388281369722962
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 1529388281369722955
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: WhenUnitIsKilled
+        functionDescription: Unit/Unit is killed
+        functionDynamicDescription: 'When a unit is killed (Presets: <color=yellow>Killed
+          Unit</color>, <color=yellow>Killing Unit</color>, <color=yellow>Killing
+          Ability</color>, <color=yellow>Is Critical</color>)'
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Event
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets:
+        - Killed Unit
+        - Killing Unit
+        - Killing Ability
+        - Is Critical
+    - rid: 1529388281369722956
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: CreateQuest2
+        functionDescription: Quests/Create Quest
+        functionDynamicDescription: Give the player a quest named $
+        functionEvaluators:
+        - rid: 1529388281369722957
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: QuestNew
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 1529388281369722957
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Quest Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1529388281369722956
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: slay the fuckers
+        options: []
+    - rid: 1529388281369722958
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: AddQuestRequirement2
+        functionDescription: Quests/Add Quest Requirement
+        functionDynamicDescription: Add $ requirement to $ with $ progress increments
+        functionEvaluators:
+        - rid: 1529388281369722959
+        - rid: 1529388281369722960
+        - rid: 1529388281369722961
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: QuestNew
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 1529388281369722959
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Requirement
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1529388281369722958
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: kill the fuckers
+        options: []
+    - rid: 1529388281369722960
+      type: {class: StringNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Quest Name
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1529388281369722958
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: slay the fuckers
+        options: []
+    - rid: 1529388281369722961
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 1529388281369722958
+        parentNodeID: 2
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 3
+    - rid: 1529388281369722962
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: DisableScript
+        functionDescription: Flow/Disable This Script
+        functionDynamicDescription: Disable this script
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Cancel
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
