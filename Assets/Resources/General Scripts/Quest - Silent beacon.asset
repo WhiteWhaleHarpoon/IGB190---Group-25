@@ -292,7 +292,7 @@ MonoBehaviour:
         allowValue: 1
         allowPreset: 1
         allowFunction: 1
-        value: 2
+        value: 1
     - rid: 2412806294631088319
       type: {class: ActionNode, ns: , asm: Assembly-CSharp}
       data:
