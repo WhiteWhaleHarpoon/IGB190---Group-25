@@ -16,7 +16,7 @@ MonoBehaviour:
   itemDescription: 
   itemTag: 
   itemFlavourText: 
-  classRequirement: Sharp Shot
+  classRequirement: 
   itemIcon: {fileID: 21300000, guid: 39f7a15c239ed304bb4cbc5a51763d50, type: 3}
   itemType: 3
   itemRarity: 0

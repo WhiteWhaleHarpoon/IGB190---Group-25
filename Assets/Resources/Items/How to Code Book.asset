@@ -13,10 +13,14 @@ MonoBehaviour:
   m_Name: How to Code Book
   m_EditorClassIdentifier: 
   itemName: How to Code Book
-  itemDescription: 
+  itemDescription: I can't seem to understand their xenobiology or computers like
+    this, i'm missing something (requires Additional Grey Matter to complete set
+    'Hacker's Closed Mind' for effect)
   itemTag: 
-  itemFlavourText: 
-  classRequirement: hacker
+  itemFlavourText: '"Here it is, the thing that kept our family out of the back streets.
+    doesn''t look like much but theres a whole world inside those screens all you
+    need to do is start seeing it" - Bellamon Strixs ''Hacker''s Father'''
+  classRequirement: 
   itemIcon: {fileID: 21300000, guid: 70429bf7d5f2bf341be1c31492f4ecd0, type: 3}
   itemType: 2
   itemRarity: 5
@@ -35,8 +39,13 @@ MonoBehaviour:
       hasWait: 0
       eventNodes:
       - rid: 4251662474433003615
-      conditionNodes: []
-      actionNodes: []
+      - rid: 4251662525668786426
+      conditionNodes:
+      - rid: 4251662525668786363
+      - rid: 4251662525668786365
+      actionNodes:
+      - rid: 4251662525668786374
+      - rid: 4251662525668786460
     - scriptName: Item Unequipped
       scriptUID: 1592350041
       hasWait: 0
@@ -91,3 +100,282 @@ MonoBehaviour:
         allowPreset: 1
         allowFunction: 1
         presets: []
+    - rid: 4251662525668786363
+      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: PlayerHasItemEquipped
+        functionDescription: Player/Player Has Item Equipped
+        functionDynamicDescription: Player has $ equipped
+        functionEvaluators:
+        - rid: 4251662525668786364
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Condition
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0
+    - rid: 4251662525668786364
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 4251662525668786363
+        parentNodeID: 0
+        indent: 0
+        presetName: This Item
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
+    - rid: 4251662525668786365
+      type: {class: BoolNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: PlayerHasItemEquipped
+        functionDescription: Player/Player Has Item Equipped
+        functionDynamicDescription: Player has $ equipped
+        functionEvaluators:
+        - rid: 4251662525668786366
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Condition
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 0
+    - rid: 4251662525668786366
+      type: {class: ItemNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Item
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 4251662525668786365
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 11400000, guid: 4cdcf1ca4d9f6cd4fbd9a0fe86d774d0, type: 2}
+    - rid: 4251662525668786374
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: KillUnit
+        functionDescription: Unit/Kill
+        functionDynamicDescription: Kill $
+        functionEvaluators:
+        - rid: 4251662525668786375
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Unit
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4251662525668786375
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: Unit
+        functionName: RandomNearbyUnitToUnit
+        functionDescription: Random/Random Unit Near Unit
+        functionDynamicDescription: Random unit within $ of $
+        functionEvaluators:
+        - rid: 4251662525668786458
+        - rid: 4251662525668786459
+        parentNode:
+          rid: 4251662525668786374
+        parentNodeID: 0
+        indent: 0
+        presetName: Player
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 0
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 0}
+    - rid: 4251662525668786426
+      type: {class: EventNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: OnTimerFinished
+        functionDescription: Time/Do every X Seconds
+        functionDynamicDescription: Every $ seconds
+        functionEvaluators:
+        - rid: 4251662525668786427
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Timer
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        presets: []
+    - rid: 4251662525668786427
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 4251662525668786426
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 10
+    - rid: 4251662525668786458
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: m
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 10
+    - rid: 4251662525668786459
+      type: {class: UnitNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 4
+        tempName: Unit
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: Player
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 243147159722867909, guid: 374d47c23bdc7f5469a02d3129649e86, type: 3}
+    - rid: 4251662525668786460
+      type: {class: ActionNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 2
+        tempName: 
+        functionName: Play2DSound
+        functionDescription: Audio/Play Sound
+        functionDynamicDescription: Play $ at $ volume
+        functionEvaluators:
+        - rid: 4251662525668786461
+        - rid: 4251662525668786462
+        parentNode:
+          rid: -2
+        parentNodeID: -1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: Audio
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+    - rid: 4251662525668786461
+      type: {class: AudioNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: Audio Clip
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 4251662525668786460
+        parentNodeID: 0
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: 
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: {fileID: 8300000, guid: 2e9734970c9d46b4b9db6bec5bdd7550, type: 3}
+    - rid: 4251662525668786462
+      type: {class: NumberNode, ns: , asm: Assembly-CSharp}
+      data:
+        returnType: 0
+        tempName: 
+        functionName: 
+        functionDescription: 
+        functionDynamicDescription: 
+        functionEvaluators: []
+        parentNode:
+          rid: 4251662525668786460
+        parentNodeID: 1
+        indent: 0
+        presetName: 
+        variableName: 
+        stringSuffix: '%'
+        nodeIcon: 
+        allowValue: 1
+        allowPreset: 1
+        allowFunction: 1
+        value: 60
