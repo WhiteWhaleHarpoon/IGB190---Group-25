@@ -1800,19 +1800,19 @@ MonoBehaviour:
   panTime: 12
   introItems:
   - sprite: {fileID: 21300000, guid: fff56c6ab133b9b438c153c5a20e9e90, type: 3}
-    message: You make your way over to the communications module.
+    message: You defeated the skeleton lord, but your ship is on fire.
     clip: {fileID: 0}
     time: 6
     start: {x: -70, y: -200}
     end: {x: 0, y: 0}
   - sprite: {fileID: 21300000, guid: b9ce18d5c9a51f546acbeb0f971737d1, type: 3}
-    message: You blast your distress signal out into the cosmos.
+    message: You crashland in the swamp of an alien planet.
     clip: {fileID: 0}
     time: 6
     start: {x: -210, y: -120}
     end: {x: 0, y: 0}
   - sprite: {fileID: 21300000, guid: 31613a25aec54be43b7ddcc71eb68c18, type: 3}
-    message: Thankfully a resuce ship arrives without much issue.
+    message: Will you survive!?!?!
     clip: {fileID: 0}
     time: 6
     start: {x: -190, y: -200}

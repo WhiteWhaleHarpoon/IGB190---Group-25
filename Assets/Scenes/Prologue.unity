@@ -1859,7 +1859,7 @@ MonoBehaviour:
     start: {x: -210, y: -120}
     end: {x: 0, y: 0}
   - sprite: {fileID: 21300000, guid: 7ee170d84618a4dd7aa936664e1adc07, type: 3}
-    message: After warping to the planet your ship was raided by an unknown entity.
+    message: After warping to the planet your ship was raided by skeleton pirates!.
     clip: {fileID: 0}
     time: 5
     start: {x: -190, y: -200}
