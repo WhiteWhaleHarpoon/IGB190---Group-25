@@ -54009,11 +54009,11 @@ MonoBehaviour:
     baseGoldDropAmountMinimum: 10
     baseGoldDropAmountMaximum: 20
     goldDropChance: 0.2
-    unempoweredMonsterscrapDropChance: 0.15
-    unempoweredMonsterImportGoodsDropChance: 0.01
-    unempoweredMonsterFineTunedDropChance: 0.005
-    unempoweredMonsterMilitaryGradeDropChance: 0
-    unempoweredMonsterUniqueDropChance: 0
+    unempoweredMonsterscrapDropChance: 0.3
+    unempoweredMonsterImportGoodsDropChance: 0.15
+    unempoweredMonsterFineTunedDropChance: 0.1
+    unempoweredMonsterMilitaryGradeDropChance: 0.01
+    unempoweredMonsterUniqueDropChance: 0.01
     unempoweredMonsterMemorabiliaDropChance: 0
   _empoweredMonsterValues:
     empoweredMonsterHealthModifier: 2
@@ -54029,13 +54029,13 @@ MonoBehaviour:
     empoweredMonsterMemorabiliaDropChance: 0
   _playerExperienceValues:
     baseMonsterXP: 10
-    startingXPPerLevel: 1000
+    startingXPPerLevel: 100
     additionalMaxXPPerLevel: 0
   _monsterScalingValues:
     increasedHealthPerPlayerLevel: 0.25
     increasedDamagePerPlayerLevel: 0.25
   _healthGlobeValues:
-    baseHealthGlobeChance: 0
+    baseHealthGlobeChance: 0.2
     reducedChancePerExistingGlobe: 0
     spawnRadius: 6
     lifetime: 5
