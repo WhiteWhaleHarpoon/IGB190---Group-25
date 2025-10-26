@@ -52513,8 +52513,8 @@ MonoBehaviour:
     showUnitOutlines: 0
     keybindings: 4301000044010000710000007700000065000000720000002000000030010000
   _monsterValues:
-    baseGoldDropAmountMinimum: 10
-    baseGoldDropAmountMaximum: 20
+    baseGoldDropAmountMinimum: 25
+    baseGoldDropAmountMaximum: 400
     goldDropChance: 0.2
     unempoweredMonsterscrapDropChance: 0.45
     unempoweredMonsterImportGoodsDropChance: 0.1
