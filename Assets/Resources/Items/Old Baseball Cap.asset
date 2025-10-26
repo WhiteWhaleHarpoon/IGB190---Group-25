@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Old Baseball Cap
   m_EditorClassIdentifier: 
   itemName: Old Baseball Cap
-  itemDescription: 'TODO: Someone still needs to make these items!'
+  itemDescription: 
   itemTag: 
   itemFlavourText: 
   classRequirement: 

@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.3584906, g: 0.3500356, b: 0.35162124, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 583f0d117f7056948943f87366c0f77b, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -54009,18 +54009,24 @@ MonoBehaviour:
     baseGoldDropAmountMinimum: 10
     baseGoldDropAmountMaximum: 20
     goldDropChance: 0.2
-    unempoweredMonsterCommonDropChance: 0
-    unempoweredMonsterRareDropChance: 0
-    unempoweredMonsterLegendaryDropChance: 0
+    unempoweredMonsterscrapDropChance: 0.15
+    unempoweredMonsterImportGoodsDropChance: 0.01
+    unempoweredMonsterFineTunedDropChance: 0.005
+    unempoweredMonsterMilitaryGradeDropChance: 0
+    unempoweredMonsterUniqueDropChance: 0
+    unempoweredMonsterMemorabiliaDropChance: 0
   _empoweredMonsterValues:
     empoweredMonsterHealthModifier: 2
     empoweredMonsterDamageModifier: 2
     empoweredMonsterAttackSpeedModifier: 1
     empoweredMonsterXPModifier: 5
     empoweredMonsterGoldModifier: 3
-    empoweredMonsterCommonDropChance: 1
-    empoweredMonsterRareDropChance: 0.2
-    empoweredMonsterLegendaryDropChance: 0
+    empoweredMonsterscrapDropChance: 1
+    empoweredMonsterImportGoodsDropChance: 0.2
+    empoweredMonsterFineTunedDropChance: 0
+    empoweredMonsterMilitaryGradeDropChance: 0
+    empoweredMonsterUniqueDropChance: 0
+    empoweredMonsterMemorabiliaDropChance: 0
   _playerExperienceValues:
     baseMonsterXP: 10
     startingXPPerLevel: 1000
